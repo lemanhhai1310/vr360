@@ -1,0 +1,17 @@
+$sizes:(
+        '142': 1.42857,
+);
+@each $name,$value in $sizes {
+  .lh-#{$name}{
+    line-height: #{$value};
+  }
+}
+
+$sizes:(
+        '50': 50px,
+);
+@each $name,$value in $sizes {
+  .lh-#{$name}-btn{
+    line-height: calc(#{$value} - 2px);
+  }
+}

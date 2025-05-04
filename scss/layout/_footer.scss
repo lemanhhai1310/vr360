@@ -1,0 +1,15 @@
+.footer {
+  &__nav{
+    >li{
+      >a{
+        @extend .fz-16;
+      }
+    }
+  }
+  &__top {
+
+  }
+  &__bottom {
+    border-top: 1px solid #3161C2;
+  }
+}
