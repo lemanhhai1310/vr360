@@ -16,17 +16,13 @@ $sizes: (
   .padding-#{$name} {
     padding: $value;
   }
-  .padding-top-#{$name} {
-    padding-top: $value;
-  }
-  .padding-right-#{$name} {
+  .padding-x-#{$name} {
+    padding-left: $value;
     padding-right: $value;
   }
-  .padding-bottom-#{$name} {
+  .padding-y-#{$name} {
+    padding-top: $value;
     padding-bottom: $value;
-  }
-  .padding-left-#{$name} {
-    padding-left: $value;
   }
 
   @each $breakpoint, $width in $grid-breakpoints {
@@ -34,17 +30,13 @@ $sizes: (
       .padding-#{$breakpoint}-#{$name} {
         padding: $value;
       }
-      .padding-#{$breakpoint}-top-#{$name} {
-        padding-top: $value;
-      }
-      .padding-#{$breakpoint}-right-#{$name} {
+      .padding-#{$breakpoint}-x-#{$name} {
+        padding-left: $value;
         padding-right: $value;
       }
-      .padding-#{$breakpoint}-bottom-#{$name} {
+      .padding-#{$breakpoint}-y-#{$name} {
+        padding-top: $value;
         padding-bottom: $value;
-      }
-      .padding-#{$breakpoint}-left-#{$name} {
-        padding-left: $value;
       }
     }
   }

@@ -1,9 +1,23 @@
 .home {
+  &__about{
+    &__column{
+
+    }
+    &__box{
+      .home__about__column:nth-child(odd) &{
+        background: rgba(#FFF, 0.61);
+      }
+      .home__about__column:nth-child(even) &{
+        background: rgba(#070A71, 0.72);
+      }
+    }
+  }
   &__tintuc{
     &__nav{
       >li{
         >a{
           @extend .fz-16;
+          @extend .barlow-medium;
           &:not(:hover){
             @extend .text-3161C2;
           }

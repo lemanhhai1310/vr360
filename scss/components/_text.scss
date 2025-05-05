@@ -23,3 +23,12 @@ $colors: (
     color: rgba($value, 1);
   }
 }
+
+$sizes: (
+        '-016': -0.16px,
+);
+@each $name,$value in $sizes {
+  .ls-#{$name} {
+    letter-spacing: $value;
+  }
+}
