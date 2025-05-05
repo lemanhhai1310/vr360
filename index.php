@@ -2,6 +2,126 @@
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+         uk-slideshow="ratio: false; autoplay: true; autoplay-interval: 5000; animation: fade; pause-on-hover: false">
+
+        <div class="uk-slideshow-items" uk-height-viewport="">
+            <?php
+            $slides = [
+                [
+                    'image' => 'https://picsum.photos/1920/1080?random=1',
+                    'title' => 'Video VR360',
+                    'description' => 'Công nghệ quay video 360 độ, Flycam với những góc nhìn rộng, chuyên nghiệp full HD',
+                    'button' => [
+                        'text' => 'Xem dự án',
+                        'url' => '#'
+                    ]
+                ],
+                [
+                    'image' => 'https://picsum.photos/1920/1080?random=2',
+                    'title' => 'Ảnh VR360',
+                    'description' => 'Chụp ảnh 360 độ chất lượng cao với công nghệ hiện đại',
+                    'button' => [
+                        'text' => 'Xem thêm',
+                        'url' => '#'
+                    ]
+                ],
+                [
+                    'image' => 'https://picsum.photos/1920/1080?random=3',
+                    'title' => 'Tour VR360',
+                    'description' => 'Tạo tour thực tế ảo tương tác cao với không gian 360 độ',
+                    'button' => [
+                        'text' => 'Khám phá',
+                        'url' => '#'
+                    ]
+                ]
+            ];
+            foreach ($slides as $slide): ?>
+                <div>
+                    <div class="uk-position-relative uk-height-1-1 uk-background-norepeat uk-background-cover uk-background-center-center uk-flex uk-flex-middle"
+                         data-src="<?= $slide['image'] ?>" uk-img="loading: eager">
+                        <div class="uk-position-cover home__slider__overlay"></div>
+                        <div class="uk-width uk-section uk-position-relative uk-text-center uk-text-left@l">
+                            <div class="uk-container uk-container-xlarge">
+                                <h2 class="uk-text-uppercase fz-47" uk-slideshow-parallax="x: 200,0,0"><?= $slide['title'] ?></h2>
+                                <p class="w-545 fz-18 barlow-medium" uk-slideshow-parallax="x: 400,0,0;"><?= $slide['description'] ?></p>
+                                <a href="<?= $slide['button']['url'] ?>" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="home__slider__btn barlow-bold uk-button uk-button-default uk-border-pill">
+                                    <?= $slide['button']['text'] ?>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                                        <path d="M1.20592 6.22439H13.091L9.64616 9.75947C9.37085 10.042 9.37085 10.5056 9.64616 10.7881C9.92147 11.0706 10.3662 11.0706 10.6415 10.7881L15.2935 6.01432C15.5688 5.7318 15.5688 5.27543 15.2935 4.99292L10.6486 0.211877C10.5167 0.0762307 10.3376 0 10.1509 0C9.96416 0 9.78511 0.0762307 9.65322 0.211877C9.37791 0.494392 9.37791 0.950764 9.65322 1.23328L13.091 4.7756H1.20592C0.817664 4.7756 0.5 5.10157 0.5 5.49999C0.5 5.89841 0.817664 6.22439 1.20592 6.22439Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+           uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+           uk-slideshow-item="next"></a>
+
+        <div class="uk-position-bottom-center uk-position-small">
+            <ul class="uk-dotnav home__slider__dotnav uk-flex-center uk-margin uk-grid-24-l" uk-height-match=".my-class">
+                <?php for ($i = 0; $i < count($slides); $i++): ?>
+                    <li uk-slideshow-item="<?= $i ?>">
+                        <a href class="uk-link-toggle">
+                            <div class="uk-grid-10 uk-grid uk-flex-bottom uk-visible@l" uk-grid>
+                                <div>
+                                    <div class="uk-flex uk-flex-bottom my-class">
+                                        <?php if ($i==0): ?>
+                                            <svg width="31" height="43" viewBox="0 0 31 43" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <rect width="31" height="43" fill="url(#pattern0_4856_228)"/>
+                                                <defs>
+                                                    <pattern id="pattern0_4856_228" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                        <use xlink:href="#image0_4856_228" transform="matrix(0.0223725 0 0 0.016129 -0.00338189 0)"/>
+                                                    </pattern>
+                                                    <image id="image0_4856_228" width="45" height="62" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                                                </defs>
+                                            </svg>
+                                        <?php endif; ?>
+                                        <?php if ($i==1): ?>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="37" viewBox="0 0 42 37" fill="none">
+                                                <g clip-path="url(#clip0_4937_286)">
+                                                    <path d="M40.5438 14.0534C36.4308 16.8563 31.7971 17.5564 27.1174 18.0845C26.8214 18.1179 26.4126 18.0258 26.2089 17.8323C25.7628 17.4087 26.1015 16.7814 26.8144 16.679C28.0302 16.5044 29.2493 16.3551 30.4662 16.1875C30.7249 16.1519 30.9788 16.0819 31.298 16.0145C31.298 12.7573 31.2958 9.51299 31.2991 6.25739C31.3001 5.20811 31.6059 4.94997 32.6159 5.1747C35.64 5.84727 38.911 7.1396 41.0413 8.99725C41.7359 9.60299 42.0022 10.4669 42.0005 11.4105C41.9919 17.5483 41.9908 23.686 42.0005 29.8238C42.0319 33.1338 36.6625 34.7969 34.0505 35.4727C27.933 37.041 21.7232 37.2851 15.4572 36.7305C10.54 36.2708 5.39799 35.4975 1.36705 32.4332C0.385102 31.7256 -6.26787e-06 30.6472 0.00593509 29.3959C0.0329413 23.5227 0.0432036 17.6496 -6.26784e-06 11.777C-0.0108087 10.2907 0.432633 8.9994 1.67492 8.28749C3.90131 7.01133 6.47553 6.00194 8.96496 5.30027C9.54127 5.13751 9.8378 5.53685 9.83942 6.30158C9.84428 9.21389 9.84158 12.1262 9.84158 15.0391C9.84158 15.3004 9.84158 15.5618 9.84158 15.9757C11.9265 16.2365 13.967 16.5955 16.0222 16.7226C18.5943 16.8822 21.1777 16.8563 23.7568 16.8978C24.3023 16.9064 24.9175 16.8353 24.9035 17.6124C24.8916 18.2898 24.3396 18.3405 23.7995 18.3507C16.2215 18.3766 8.07052 18.4316 1.51288 14.0167C1.39459 19.1192 1.5226 24.1974 1.45455 29.2989C1.4486 30.2597 1.80671 30.9647 2.52237 31.5434C3.89915 32.6563 5.52654 33.2561 7.1912 33.7541C7.40509 33.8182 7.78209 33.621 7.9733 33.4329C10.069 31.3726 12.142 29.2897 14.2236 27.2143C14.9782 26.462 15.272 26.4776 15.9633 27.307C17.2569 28.8591 18.5473 30.4139 19.9008 32.0419C20.105 31.7843 20.2811 31.5736 20.4442 31.3537C22.137 29.0725 23.827 26.7891 25.5192 24.5073C26.2025 23.5858 26.5838 23.5745 27.3054 24.4615C29.6765 27.3755 32.0542 30.2845 34.4053 33.2141C34.7467 33.6398 35.0508 33.7924 35.5536 33.5364C36.8343 32.8832 38.1603 32.3103 39.3988 31.5871C40.2311 31.101 40.5654 30.2759 40.5584 29.2552C40.5238 24.2255 40.5427 19.1957 40.5427 14.0534H40.5438ZM20.879 33.2076C21.4305 33.8754 21.9231 34.528 22.4826 35.1176C22.6798 35.3256 23.0438 35.4937 23.3252 35.484C26.788 35.4366 29.9023 34.8228 33.4185 34.2828C31.0204 31.3354 28.7551 28.5519 26.445 25.7134C24.5664 28.2426 22.7489 30.6898 20.879 33.2076ZM32.7736 15.7316C33.4558 15.5489 34.0802 15.4508 34.6478 15.2169C36.151 14.5982 37.7249 14.0739 39.0958 13.2294C41.0126 12.0486 40.9813 10.4383 39.1082 9.19126C37.1697 7.92372 35.0248 7.28403 32.7731 6.65996C32.7731 9.75119 32.7731 12.6754 32.7731 15.7316H32.7736ZM8.36002 6.79469C6.82877 7.39666 5.40177 7.89516 4.03364 8.52192C3.34822 8.83611 2.70439 9.31521 2.15887 9.84119C1.27198 10.6965 1.29305 11.6918 2.14374 12.5821C2.48888 12.9432 2.88317 13.3021 3.32607 13.5182C4.44683 14.0658 5.60053 14.5486 6.75478 15.0229C7.25169 15.2271 7.78371 15.3452 8.36002 15.5209V6.79469ZM9.2966 34.3404C13.1034 35.1779 16.9032 35.5471 20.912 35.5277C18.8795 33.0848 16.9734 30.7938 15.1159 28.5605C13.172 30.4915 11.267 32.3836 9.2966 34.3404Z" fill="white"/>
+                                                    <path d="M20.5787 14.9157C18.4819 14.9157 16.3846 14.9183 14.2879 14.9146C12.7194 14.9119 11.9621 14.18 11.9567 12.6387C11.9475 9.89724 11.9475 7.15522 11.9573 4.41374C11.9627 2.89723 12.7059 2.16753 14.2236 2.14813C14.3198 2.14705 14.4191 2.13304 14.5126 2.14975C15.4113 2.31412 15.9812 2.01502 16.3339 1.11772C16.6401 0.338979 17.3428 0.00107669 18.1984 0.00646587C19.741 0.0161664 21.2841 0.0317951 22.8262 0.000537768C23.84 -0.0199411 24.5778 0.390715 24.9397 1.31173C25.2157 2.01502 25.6488 2.264 26.365 2.15298C27.8412 2.02202 29.1731 2.48711 29.1991 4.13027C29.2455 7.06361 29.2461 9.99856 29.1991 12.9319C29.1791 14.1816 28.3441 14.9043 27.0872 14.9113C24.9181 14.9237 22.7484 14.9146 20.5792 14.9151L20.5787 14.9157ZM20.5819 13.466C22.6317 13.466 24.682 13.4676 26.7318 13.4654C27.6662 13.4643 27.764 13.369 27.7656 12.4296C27.7688 9.97538 27.7667 7.52061 27.7667 5.06637C27.7667 3.80045 27.7683 3.62261 26.2992 3.62261C25.0023 3.62261 24.0944 3.42105 23.7141 2.07699C23.5812 1.60705 23.2258 1.43622 22.7143 1.447C21.2679 1.47771 19.8204 1.48041 18.3745 1.48041C17.8765 1.48041 17.6707 1.71592 17.534 1.96328C16.5251 3.78752 17.0452 3.5865 14.6465 3.59836C14.5261 3.5989 14.4051 3.59674 14.2852 3.59728C13.556 3.5989 13.3994 3.84949 13.4042 4.49189C13.4248 7.18702 13.428 9.88215 13.4026 12.5767C13.3956 13.2892 13.6954 13.4854 14.3613 13.4762C16.4349 13.4487 18.5095 13.466 20.583 13.466H20.5819Z" fill="white"/>
+                                                    <path d="M20.0321 25.8589C18.5046 25.8654 17.3709 24.7493 17.3709 23.2387C17.3887 19.7923 22.5971 19.7357 22.6495 23.2026C22.6701 24.7256 21.5601 25.8525 20.0321 25.8589ZM21.1934 23.27C21.209 22.5678 20.7451 22.0817 20.0451 22.0671C18.4566 22.0358 18.4074 24.3645 19.9813 24.4103C20.677 24.4259 21.1782 23.9549 21.1934 23.2705V23.27Z" fill="white"/>
+                                                    <path d="M19.0464 3.9077C20.8812 3.24106 22.9574 3.82093 24.1208 5.38595C24.6096 6.04289 24.9062 6.82379 24.9316 7.66127C25.0077 10.1521 23.2037 12.1408 20.7451 12.2749C18.1487 12.4167 15.8813 9.96407 16.2561 7.41067C16.3263 6.93157 16.4824 6.47942 17.0971 6.54409C17.6674 6.60445 17.7236 7.03073 17.7139 7.50498C17.6761 9.29042 18.4306 10.3656 19.9554 10.7283C21.2101 11.0268 22.5075 10.4405 23.1308 9.29311C24.5648 6.66103 21.4888 3.96051 19.0572 5.45493C18.5873 5.75942 18.1465 6.20942 17.6399 5.55356C17.1165 4.7732 18.0715 4.26123 19.0458 3.90716L19.0464 3.9077Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_4937_286">
+                                                        <rect width="42" height="37" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        <?php endif; ?>
+                                        <?php if ($i==2): ?>
+                                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <rect width="38" height="38" fill="url(#pattern0_4860_356)"/>
+                                                <defs>
+                                                    <pattern id="pattern0_4860_356" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                        <use xlink:href="#image0_4860_356" transform="scale(0.016129)"/>
+                                                    </pattern>
+                                                    <image id="image0_4860_356" width="62" height="62" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                                                </defs>
+                                            </svg>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="fz-14 barlow-bold text-FFF"><?= $slides[$i]['title'] ?></div>
+                                </div>
+                            </div>
+                            <div class="home__slider__loadtimebar uk-border-rounded item-9px"></div>
+                        </a>
+                    </li>
+                <?php endfor; ?>
+            </ul>
+        </div>
+    </div>
 <div class="uk-section uk-background-norepeat uk-background-top-center" uk-toggle="cls: uk-background-cover; mode: media; media: (max-width: 959px)" data-src="images/MFC-PROFILE-231120-7-3.webp" uk-img>
     <div class="uk-container">
         <h2 class="fz-32 uk-text-center text-000">Giới thiệu <span class="uk-text-uppercase fz-38 text-3161C2">vr360tht</span></h2>
