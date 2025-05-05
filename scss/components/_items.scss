@@ -1,5 +1,5 @@
 $j:
-        4px;
+        3px,4px,9px,10px,19px,37px,50px,51px;
 @each $i in $j {
   .item-#{$i}{
     &:nth-child(n+2){

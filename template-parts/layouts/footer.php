@@ -1,4 +1,4 @@
-<footer class="footer bgc-070A71 uk-light">
+<footer class="footer uk-light uk-background-image@l" style="--bgleft: url(images/bg_f_left.webp); --bgright: url(images/bg_f_right.webp);">
     <div class="uk-section-xsmall">
         <div class="uk-container">
             <figure class="uk-text-center uk-text-left@l">

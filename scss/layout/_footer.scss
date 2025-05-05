@@ -1,4 +1,8 @@
 .footer {
+  background:
+          var(--bgleft) no-repeat top left,
+          var(--bgright) no-repeat top right,
+          #070A71;
   &__nav{
     >li{
       >a{

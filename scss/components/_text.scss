@@ -10,3 +10,16 @@ $j: 1,2,3,4,5;
     @include line-clamp($i);
   }
 }
+
+$colors: (
+        '000': #000,
+        'FFF': #FFF,
+        '3161C2': #3161C2,
+        'F69C1F': #F69C1F,
+        '0B0B0B': #0B0B0B,
+);
+@each $name,$value in $colors {
+  .text-#{$name} {
+    color: rgba($value, 1);
+  }
+}
