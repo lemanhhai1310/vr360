@@ -14,16 +14,76 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="assets/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1746476300">
+    <link rel="stylesheet" href="style.css?v=1746497428">
 
     <!--JS-->
     <script src="assets/dist/js/uikit.min.js"></script>
     <script src="assets/dist/js/uikit-icons.min.js"></script>
-    <script src="js/app.js?v=1746476300"></script>
+    <script src="js/app.js?v=1746497428"></script>
 </head>
 <body class="">
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <header class="header uk-position-z-index-high uk-position-top">
+        <nav class="header__navContainer uk-navbar-container uk-navbar-transparent" uk-sticky>
+            <div class="uk-container uk-container-expand">
+                <div uk-navbar>
+
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item uk-hidden@l">
+                            <a href="#offcanvas-flip" uk-toggle="" class="hamburger" role="button">
+                                <span class="hamburger__line hamburger__line--top"></span>
+                                <span class="hamburger__line hamburger__line--center"></span>
+                                <span class="hamburger__line hamburger__line--bottom"></span>
+                            </a>
+                        </div>
+                        <div id="offcanvas-flip" class="header__offcanvas" uk-offcanvas="flip: true; overlay: true">
+                            <div class="uk-offcanvas-bar header__offcanvas__bar uk-flex uk-flex-column">
+                                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                    <li class="uk-active"><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Dịch vụ</a></li>
+                                    <li><a href="#">Dự án nổi bật</a></li>
+                                    <li><a href="#">Tin tức công nghệ</a></li>
+                                    <li><a href="lienhe.php">Liên hệ</a></li>                                </ul>
+
+                            </div>
+                        </div>
+                        <a class="uk-navbar-item uk-logo uk-visible@l" href="." aria-label="Back to Home"><img src="images/logo-vr360-f.webp" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-center uk-hidden@l">
+                        <a class="uk-navbar-item uk-logo" href="." aria-label="Back to Home"><img src="images/logo-vr360-f.webp" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="header__nav uk-navbar-nav uk-visible@l">
+                            <li><a href="#" uk-icon="icon: home"></a></li>
+                            <li class="uk-active"><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Dịch vụ</a></li>
+                            <li><a href="#">Dự án nổi bật</a></li>
+                            <li><a href="#">Tin tức công nghệ</a></li>
+                            <li><a href="lienhe.php">Liên hệ</a></li>                        </ul>
+                        <div>
+                            <a class="uk-navbar-toggle text-3161C2" href uk-search-icon></a>
+                            <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; flip: false">
+
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                                            <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
+                                        </form>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <a class="uk-drop-close" href="#" uk-close></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
          uk-slideshow="ratio: false; autoplay: true; autoplay-interval: 5000; animation: fade; pause-on-hover: false">
@@ -35,13 +95,15 @@
                     <div class="uk-position-cover home__slider__overlay"></div>
                     <div class="uk-width uk-section uk-position-relative uk-text-center uk-text-left@l">
                         <div class="uk-container uk-container-xlarge">
-                            <h2 class="uk-text-uppercase fz-47" uk-slideshow-parallax="x: 200,0,0">Video VR360</h2>
-                            <p class="w-545 fz-18 barlow-medium" uk-slideshow-parallax="x: 400,0,0;">Công nghệ quay video 360 độ, Flycam với những góc nhìn rộng, chuyên nghiệp full HD</p>
-                            <a href="#" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="home__slider__btn barlow-bold uk-button uk-button-default uk-border-pill">
-                                Xem dự án                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
-                                <path d="M1.20592 6.22439H13.091L9.64616 9.75947C9.37085 10.042 9.37085 10.5056 9.64616 10.7881C9.92147 11.0706 10.3662 11.0706 10.6415 10.7881L15.2935 6.01432C15.5688 5.7318 15.5688 5.27543 15.2935 4.99292L10.6486 0.211877C10.5167 0.0762307 10.3376 0 10.1509 0C9.96416 0 9.78511 0.0762307 9.65322 0.211877C9.37791 0.494392 9.37791 0.950764 9.65322 1.23328L13.091 4.7756H1.20592C0.817664 4.7756 0.5 5.10157 0.5 5.49999C0.5 5.89841 0.817664 6.22439 1.20592 6.22439Z" fill="white"/>
-                            </svg>
-                            </a>
+                            <h2 class="uk-text-uppercase fz-47 uk-margin-remove" uk-slideshow-parallax="x: 200,0,0">Video VR360</h2>
+                            <p class="w-545 fz-18 barlow-medium uk-margin-remove-bottom item-17px" uk-slideshow-parallax="x: 400,0,0;">Công nghệ quay video 360 độ, Flycam với những góc nhìn rộng, chuyên nghiệp full HD</p>
+                            <div class="item-47px">
+                                <a href="#" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="home__slider__btn barlow-bold uk-button uk-button-default uk-border-pill">
+                                    Xem dự án                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                                    <path d="M1.20592 6.22439H13.091L9.64616 9.75947C9.37085 10.042 9.37085 10.5056 9.64616 10.7881C9.92147 11.0706 10.3662 11.0706 10.6415 10.7881L15.2935 6.01432C15.5688 5.7318 15.5688 5.27543 15.2935 4.99292L10.6486 0.211877C10.5167 0.0762307 10.3376 0 10.1509 0C9.96416 0 9.78511 0.0762307 9.65322 0.211877C9.37791 0.494392 9.37791 0.950764 9.65322 1.23328L13.091 4.7756H1.20592C0.817664 4.7756 0.5 5.10157 0.5 5.49999C0.5 5.89841 0.817664 6.22439 1.20592 6.22439Z" fill="white"/>
+                                </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -52,13 +114,15 @@
                     <div class="uk-position-cover home__slider__overlay"></div>
                     <div class="uk-width uk-section uk-position-relative uk-text-center uk-text-left@l">
                         <div class="uk-container uk-container-xlarge">
-                            <h2 class="uk-text-uppercase fz-47" uk-slideshow-parallax="x: 200,0,0">Ảnh VR360</h2>
-                            <p class="w-545 fz-18 barlow-medium" uk-slideshow-parallax="x: 400,0,0;">Chụp ảnh 360 độ chất lượng cao với công nghệ hiện đại</p>
-                            <a href="#" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="home__slider__btn barlow-bold uk-button uk-button-default uk-border-pill">
-                                Xem thêm                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
-                                <path d="M1.20592 6.22439H13.091L9.64616 9.75947C9.37085 10.042 9.37085 10.5056 9.64616 10.7881C9.92147 11.0706 10.3662 11.0706 10.6415 10.7881L15.2935 6.01432C15.5688 5.7318 15.5688 5.27543 15.2935 4.99292L10.6486 0.211877C10.5167 0.0762307 10.3376 0 10.1509 0C9.96416 0 9.78511 0.0762307 9.65322 0.211877C9.37791 0.494392 9.37791 0.950764 9.65322 1.23328L13.091 4.7756H1.20592C0.817664 4.7756 0.5 5.10157 0.5 5.49999C0.5 5.89841 0.817664 6.22439 1.20592 6.22439Z" fill="white"/>
-                            </svg>
-                            </a>
+                            <h2 class="uk-text-uppercase fz-47 uk-margin-remove" uk-slideshow-parallax="x: 200,0,0">Ảnh VR360</h2>
+                            <p class="w-545 fz-18 barlow-medium uk-margin-remove-bottom item-17px" uk-slideshow-parallax="x: 400,0,0;">Chụp ảnh 360 độ chất lượng cao với công nghệ hiện đại</p>
+                            <div class="item-47px">
+                                <a href="#" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="home__slider__btn barlow-bold uk-button uk-button-default uk-border-pill">
+                                    Xem thêm                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                                    <path d="M1.20592 6.22439H13.091L9.64616 9.75947C9.37085 10.042 9.37085 10.5056 9.64616 10.7881C9.92147 11.0706 10.3662 11.0706 10.6415 10.7881L15.2935 6.01432C15.5688 5.7318 15.5688 5.27543 15.2935 4.99292L10.6486 0.211877C10.5167 0.0762307 10.3376 0 10.1509 0C9.96416 0 9.78511 0.0762307 9.65322 0.211877C9.37791 0.494392 9.37791 0.950764 9.65322 1.23328L13.091 4.7756H1.20592C0.817664 4.7756 0.5 5.10157 0.5 5.49999C0.5 5.89841 0.817664 6.22439 1.20592 6.22439Z" fill="white"/>
+                                </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,13 +133,15 @@
                     <div class="uk-position-cover home__slider__overlay"></div>
                     <div class="uk-width uk-section uk-position-relative uk-text-center uk-text-left@l">
                         <div class="uk-container uk-container-xlarge">
-                            <h2 class="uk-text-uppercase fz-47" uk-slideshow-parallax="x: 200,0,0">Tour VR360</h2>
-                            <p class="w-545 fz-18 barlow-medium" uk-slideshow-parallax="x: 400,0,0;">Tạo tour thực tế ảo tương tác cao với không gian 360 độ</p>
-                            <a href="#" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="home__slider__btn barlow-bold uk-button uk-button-default uk-border-pill">
-                                Khám phá                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
-                                <path d="M1.20592 6.22439H13.091L9.64616 9.75947C9.37085 10.042 9.37085 10.5056 9.64616 10.7881C9.92147 11.0706 10.3662 11.0706 10.6415 10.7881L15.2935 6.01432C15.5688 5.7318 15.5688 5.27543 15.2935 4.99292L10.6486 0.211877C10.5167 0.0762307 10.3376 0 10.1509 0C9.96416 0 9.78511 0.0762307 9.65322 0.211877C9.37791 0.494392 9.37791 0.950764 9.65322 1.23328L13.091 4.7756H1.20592C0.817664 4.7756 0.5 5.10157 0.5 5.49999C0.5 5.89841 0.817664 6.22439 1.20592 6.22439Z" fill="white"/>
-                            </svg>
-                            </a>
+                            <h2 class="uk-text-uppercase fz-47 uk-margin-remove" uk-slideshow-parallax="x: 200,0,0">Tour VR360</h2>
+                            <p class="w-545 fz-18 barlow-medium uk-margin-remove-bottom item-17px" uk-slideshow-parallax="x: 400,0,0;">Tạo tour thực tế ảo tương tác cao với không gian 360 độ</p>
+                            <div class="item-47px">
+                                <a href="#" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="home__slider__btn barlow-bold uk-button uk-button-default uk-border-pill">
+                                    Khám phá                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                                    <path d="M1.20592 6.22439H13.091L9.64616 9.75947C9.37085 10.042 9.37085 10.5056 9.64616 10.7881C9.92147 11.0706 10.3662 11.0706 10.6415 10.7881L15.2935 6.01432C15.5688 5.7318 15.5688 5.27543 15.2935 4.99292L10.6486 0.211877C10.5167 0.0762307 10.3376 0 10.1509 0C9.96416 0 9.78511 0.0762307 9.65322 0.211877C9.37791 0.494392 9.37791 0.950764 9.65322 1.23328L13.091 4.7756H1.20592C0.817664 4.7756 0.5 5.10157 0.5 5.49999C0.5 5.89841 0.817664 6.22439 1.20592 6.22439Z" fill="white"/>
+                                </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

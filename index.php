@@ -1,4 +1,5 @@
 <?php $data["title"] = "Home"; ?>
+<?php $isHome = true; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
@@ -44,14 +45,16 @@
                         <div class="uk-position-cover home__slider__overlay"></div>
                         <div class="uk-width uk-section uk-position-relative uk-text-center uk-text-left@l">
                             <div class="uk-container uk-container-xlarge">
-                                <h2 class="uk-text-uppercase fz-47" uk-slideshow-parallax="x: 200,0,0"><?= $slide['title'] ?></h2>
-                                <p class="w-545 fz-18 barlow-medium" uk-slideshow-parallax="x: 400,0,0;"><?= $slide['description'] ?></p>
-                                <a href="<?= $slide['button']['url'] ?>" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="home__slider__btn barlow-bold uk-button uk-button-default uk-border-pill">
-                                    <?= $slide['button']['text'] ?>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
-                                        <path d="M1.20592 6.22439H13.091L9.64616 9.75947C9.37085 10.042 9.37085 10.5056 9.64616 10.7881C9.92147 11.0706 10.3662 11.0706 10.6415 10.7881L15.2935 6.01432C15.5688 5.7318 15.5688 5.27543 15.2935 4.99292L10.6486 0.211877C10.5167 0.0762307 10.3376 0 10.1509 0C9.96416 0 9.78511 0.0762307 9.65322 0.211877C9.37791 0.494392 9.37791 0.950764 9.65322 1.23328L13.091 4.7756H1.20592C0.817664 4.7756 0.5 5.10157 0.5 5.49999C0.5 5.89841 0.817664 6.22439 1.20592 6.22439Z" fill="white"/>
-                                    </svg>
-                                </a>
+                                <h2 class="uk-text-uppercase fz-47 uk-margin-remove" uk-slideshow-parallax="x: 200,0,0"><?= $slide['title'] ?></h2>
+                                <p class="w-545 fz-18 barlow-medium uk-margin-remove-bottom item-17px" uk-slideshow-parallax="x: 400,0,0;"><?= $slide['description'] ?></p>
+                                <div class="item-47px">
+                                    <a href="<?= $slide['button']['url'] ?>" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0" class="home__slider__btn barlow-bold uk-button uk-button-default uk-border-pill">
+                                        <?= $slide['button']['text'] ?>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                                            <path d="M1.20592 6.22439H13.091L9.64616 9.75947C9.37085 10.042 9.37085 10.5056 9.64616 10.7881C9.92147 11.0706 10.3662 11.0706 10.6415 10.7881L15.2935 6.01432C15.5688 5.7318 15.5688 5.27543 15.2935 4.99292L10.6486 0.211877C10.5167 0.0762307 10.3376 0 10.1509 0C9.96416 0 9.78511 0.0762307 9.65322 0.211877C9.37791 0.494392 9.37791 0.950764 9.65322 1.23328L13.091 4.7756H1.20592C0.817664 4.7756 0.5 5.10157 0.5 5.49999C0.5 5.89841 0.817664 6.22439 1.20592 6.22439Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
