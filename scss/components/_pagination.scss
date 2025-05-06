@@ -1,0 +1,28 @@
+$x:40px;
+.uk-pagination{
+  gap: 10px;
+  >*{
+    >*{
+      border-radius: 4px;
+      border: 1px solid #C1C5CD;
+      width: #{$x};
+      height: #{$x};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      &:hover{
+        background-color: #3161C2;
+        border-color: #3161C2;
+        color: #fff;
+      }
+    }
+    &.uk-active{
+      >*{
+        border-color: #3161C2;
+        background-color: #3161C2;
+        color: #fff;
+      }
+    }
+  }
+}

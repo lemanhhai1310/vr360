@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Tin tức - VR360</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1746511180">
+
+    <!--JS-->
+    <script src="assets/dist/js/uikit.min.js"></script>
+    <script src="assets/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1746511180"></script>
+</head>
+<body class="">
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <header class="header uk-position-z-index-high ">
+        <nav class="header__navContainer uk-navbar-container uk-navbar-transparent" uk-sticky>
+            <div class="uk-container uk-container-expand">
+                <div uk-navbar>
+
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item uk-hidden@l">
+                            <a href="#offcanvas-flip" uk-toggle="" class="hamburger" role="button">
+                                <span class="hamburger__line hamburger__line--top"></span>
+                                <span class="hamburger__line hamburger__line--center"></span>
+                                <span class="hamburger__line hamburger__line--bottom"></span>
+                            </a>
+                        </div>
+                        <div id="offcanvas-flip" class="header__offcanvas" uk-offcanvas="flip: true; overlay: true">
+                            <div class="uk-offcanvas-bar header__offcanvas__bar uk-flex uk-flex-column">
+                                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                    <li class="uk-active"><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Dịch vụ</a></li>
+                                    <li><a href="#">Dự án nổi bật</a></li>
+                                    <li><a href="tintuc.php">Tin tức công nghệ</a></li>
+                                    <li><a href="lienhe.php">Liên hệ</a></li>                                </ul>
+
+                            </div>
+                        </div>
+                        <a class="uk-navbar-item uk-logo uk-visible@l" href="." aria-label="Back to Home"><img src="images/logo-vr360-f.webp" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-center uk-hidden@l">
+                        <a class="uk-navbar-item uk-logo" href="." aria-label="Back to Home"><img src="images/logo-vr360-f.webp" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="header__nav uk-navbar-nav uk-visible@l">
+                            <li><a href="#" uk-icon="icon: home"></a></li>
+                            <li class="uk-active"><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Dịch vụ</a></li>
+                            <li><a href="#">Dự án nổi bật</a></li>
+                            <li><a href="tintuc.php">Tin tức công nghệ</a></li>
+                            <li><a href="lienhe.php">Liên hệ</a></li>                        </ul>
+                        <div>
+                            <a class="uk-navbar-toggle text-3161C2" href uk-search-icon></a>
+                            <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; flip: false">
+
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                                            <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
+                                        </form>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <a class="uk-drop-close" href="#" uk-close></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header><div class="uk-section-xsmall uk-background-norepeat uk-background-norepeat uk-background-center-center uk-background-blend-screen bgc-c3f5ff uk-background-cover" data-src="images/bg-breacrumd.webp" uk-img>
+    <div class="uk-container">
+        <h2 class="fz-24 barlow-semibold text-3161C2 uk-margin-remove">Tin tức công nghệ</h2>
+        <nav class="item-14px" aria-label="Breadcrumb">
+            <ul class="uk-breadcrumb uk-margin-remove">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tin tức công nghệ</a></li>
+                <li><span aria-current="page">Tin tức hoạt động</span></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    <div class="uk-section-small">
+        <div class="uk-container">
+            <h1 class="uk-text-center uk-text-uppercase fz-24 text-F69C1F uk-margin-remove-bottom">tin tức hoạt động</h1>
+            <div class="uk-child-width-1-3@l uk-grid item-34px uk-grid-match uk-grid-small uk-grid-30-l" uk-grid uk-height-match=".my-class-title">
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top uk-cover-container uk-border-rounded">
+                            <img src="https://picsum.photos/400/235?random=0" alt="" uk-cover="">
+                            <canvas width="400" height="235"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-padding-small">
+                            <div class="fz-14 text-3161C2">24/03/2025</div>
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                                                                                                                              class="uk-link-toggle">Truy xuất nguồn gốc thực phẩm bằng mã QR Code</a>
+                            </h4>
+                            <p class="line-clamp-3">Thực phẩm không an toàn vẫn đang hoành hành và qua mặt người tiêu dùng mỗi ngày...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top uk-cover-container uk-border-rounded">
+                            <img src="https://picsum.photos/400/235?random=1" alt="" uk-cover="">
+                            <canvas width="400" height="235"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-padding-small">
+                            <div class="fz-14 text-3161C2">23/03/2025</div>
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                                                                                                                              class="uk-link-toggle">Ứng dụng công nghệ trong nông nghiệp</a>
+                            </h4>
+                            <p class="line-clamp-3">Công nghệ đang thay đổi cách chúng ta canh tác và phát triển nông nghiệp...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top uk-cover-container uk-border-rounded">
+                            <img src="https://picsum.photos/400/235?random=2" alt="" uk-cover="">
+                            <canvas width="400" height="235"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-padding-small">
+                            <div class="fz-14 text-3161C2">22/03/2025</div>
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                                                                                                                              class="uk-link-toggle">Giải pháp thông minh cho doanh nghiệp</a>
+                            </h4>
+                            <p class="line-clamp-3">Các giải pháp công nghệ giúp doanh nghiệp tối ưu hoá quy trình sản xuất...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top uk-cover-container uk-border-rounded">
+                            <img src="https://picsum.photos/400/235?random=3" alt="" uk-cover="">
+                            <canvas width="400" height="235"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-padding-small">
+                            <div class="fz-14 text-3161C2">21/03/2025</div>
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                                                                                                                              class="uk-link-toggle">Chuyển đổi số trong giáo dục</a>
+                            </h4>
+                            <p class="line-clamp-3">Ứng dụng công nghệ số trong giảng dạy và học tập đang là xu hướng tất yếu...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top uk-cover-container uk-border-rounded">
+                            <img src="https://picsum.photos/400/235?random=4" alt="" uk-cover="">
+                            <canvas width="400" height="235"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-padding-small">
+                            <div class="fz-14 text-3161C2">20/03/2025</div>
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                                                                                                                              class="uk-link-toggle">IoT và những ứng dụng thực tiễn</a>
+                            </h4>
+                            <p class="line-clamp-3">Internet of Things đang tạo ra cuộc cách mạng trong nhiều lĩnh vực...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top uk-cover-container uk-border-rounded">
+                            <img src="https://picsum.photos/400/235?random=5" alt="" uk-cover="">
+                            <canvas width="400" height="235"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-padding-small">
+                            <div class="fz-14 text-3161C2">19/03/2025</div>
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                                                                                                                              class="uk-link-toggle">Blockchain và tương lai thanh toán</a>
+                            </h4>
+                            <p class="line-clamp-3">Công nghệ blockchain đang thay đổi cách chúng ta nghĩ về giao dịch...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top uk-cover-container uk-border-rounded">
+                            <img src="https://picsum.photos/400/235?random=6" alt="" uk-cover="">
+                            <canvas width="400" height="235"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-padding-small">
+                            <div class="fz-14 text-3161C2">18/03/2025</div>
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                                                                                                                              class="uk-link-toggle">AI trong nhận diện hình ảnh</a>
+                            </h4>
+                            <p class="line-clamp-3">Trí tuệ nhân tạo đang cải thiện độ chính xác trong nhận diện hình ảnh...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top uk-cover-container uk-border-rounded">
+                            <img src="https://picsum.photos/400/235?random=7" alt="" uk-cover="">
+                            <canvas width="400" height="235"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-padding-small">
+                            <div class="fz-14 text-3161C2">17/03/2025</div>
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                                                                                                                              class="uk-link-toggle">Cloud Computing và doanh nghiệp</a>
+                            </h4>
+                            <p class="line-clamp-3">Điện toán đám mây đang giúp doanh nghiệp tiết kiệm chi phí vận hành...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded">
+                        <div class="uk-card-media-top uk-cover-container uk-border-rounded">
+                            <img src="https://picsum.photos/400/235?random=8" alt="" uk-cover="">
+                            <canvas width="400" height="235"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-padding-small">
+                            <div class="fz-14 text-3161C2">16/03/2025</div>
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                                                                                                                              class="uk-link-toggle">5G và cách mạng công nghiệp 4.0</a>
+                            </h4>
+                            <p class="line-clamp-3">Mạng 5G sẽ là nền tảng quan trọng cho cuộc cách mạng công nghiệp 4.0...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Pagination" class="uk-margin-top">
+                <ul class="uk-pagination uk-flex-center" uk-margin>
+                    <li><a href="#"><span uk-pagination-previous></span></a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="uk-disabled"><span>…</span></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li class="uk-active"><span aria-current="page">7</span></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#"><span uk-pagination-next></span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <footer class="footer uk-light uk-background-image@l" style="--bgleft: url(images/bg_f_left.webp); --bgright: url(images/bg_f_right.webp);">
+        <div class="uk-section-xsmall">
+            <div class="uk-container">
+                <figure class="uk-text-center uk-text-left@l">
+                    <a href=""><img src="images/logo-vr360-f.webp" alt=""></a>
+                </figure>
+                <div class="uk-child-width-expand@l uk-grid" uk-grid uk-height-match=".my-class">
+                    <div class="uk-width-1-2@l">
+                        <div class="my-class uk-flex uk-flex-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M21.3177 4.13523V4.1597L19.5632 4.43157V3.73376L9.53284 1.48535L0 3.59873V4.85932L0.569125 4.75238V26.4335L9.48663 27.5147L11.0825 27.2954V22.5575L13.5738 22.4116V26.9963L15.2703 26.7906V22.2974L17.5006 22.1669V26.5214L21.9041 26.0121L22.1098 25.9849V21.8859L23.9431 21.7808V25.7647L25.2019 25.6134V21.6956L26.8694 21.5996V25.4122L28.4399 25.2228V7.07329L29 7.1766V5.75016L21.3177 4.13523ZM7.38141 9.15948L8.91841 8.97913V10.2624L7.38141 10.4164V9.15948ZM1.22253 9.89898L2.51847 9.74673V10.9239L1.22253 11.0544V9.89898ZM2.51756 20.9815L1.22163 20.928V19.7726L2.51756 19.8043V20.9815ZM2.51756 18.9461L1.22163 18.9279V17.7743L2.51756 17.767V18.9461ZM2.52934 16.9478L1.23341 16.9677V15.8132L2.52934 15.7706V16.9478ZM2.52934 14.9785L1.23341 15.0356V13.8801L2.52934 13.8022V14.9785ZM2.52934 12.9077L1.23341 13.002V11.8465L2.52934 11.7314V12.9077ZM2.54112 8.95376L1.24428 9.12051V7.96413L2.54112 7.77563V8.95376ZM2.54112 7.04701L1.24428 7.24729V6.09182L2.54112 5.86888V7.04701ZM3.21084 9.63254L4.582 9.47123V10.6829L3.21084 10.8206V9.63254ZM4.58291 21.0332L3.21175 20.9779V19.7889L4.58291 19.8215V21.0332ZM4.58291 18.937L3.21175 18.9207V17.7308L4.58291 17.7244V18.937ZM4.59378 16.8834L3.22263 16.9052V15.7162L4.59378 15.67V16.8834ZM4.59378 14.8553L3.22263 14.9151V13.7261L4.59378 13.6427V14.8553ZM4.59378 12.7238L3.22263 12.8234V11.6354L4.59378 11.5121V12.7238ZM4.60647 8.6556L3.23441 8.83232V7.64332L4.60647 7.44395V8.6556ZM4.60647 6.69266L3.23441 6.90563V5.71754L4.60647 5.48101V6.69266ZM5.21819 9.40779L6.66819 9.23741V10.4844L5.21819 10.6303V9.40779ZM6.66728 21.1301L5.21728 21.0721V19.8487L6.66728 19.884V21.1301ZM6.66728 18.9751L5.21728 18.9569V17.7335L6.66728 17.7272V18.9751ZM6.68088 16.8608L5.22997 16.8834V15.66L6.68088 15.6129V16.8608ZM6.68088 14.7755L5.22997 14.838V13.6155L6.68088 13.5276V14.7755ZM6.68088 12.5833L5.22997 12.6875V11.465L6.68088 11.3354V12.5833ZM6.69356 8.39823L5.24266 8.58491V7.36238L6.69356 7.15213V8.39823ZM6.69356 6.3791L5.24266 6.60476V5.38223L6.69356 5.13301V6.3791ZM8.91841 21.228L7.38141 21.1655V19.9076L8.91841 19.9448V21.228ZM8.91841 19.0077L7.38141 18.9887V17.7299L8.91841 17.7226V19.0077ZM8.93109 16.8309L7.39409 16.8563V15.5975L8.93109 15.5458V16.8309ZM8.93109 14.6831L7.39409 14.7501V13.4914L8.93109 13.398V14.6831ZM8.93109 12.4238L7.39409 12.5353V11.2774L8.93109 11.1396V12.4238ZM8.94559 8.11457L7.40769 8.31213V7.05426L8.94559 6.83132V8.11457ZM8.94559 6.03563L7.40769 6.27398V5.0161L8.94559 4.75148V6.03563ZM16.6315 7.70041L17.9147 7.88801V9.09967L16.6315 8.93473V7.70041ZM16.6315 11.7233L17.9147 11.8374V13.0491L16.6315 12.9567V11.7233ZM17.9247 13.8176V15.0284L16.6415 14.9722V13.7397L17.9247 13.8176ZM16.6188 15.7262L17.9039 15.7688V16.9804L16.6188 16.9614V15.7262ZM14.6667 7.38504L16.0225 7.58351V8.82779L14.6667 8.65288V7.38504ZM14.6667 11.5175L16.0225 11.6399V12.8833L14.6667 12.7863V11.5175ZM16.0307 13.6744V14.9187L14.6767 14.8598V13.5929L16.0307 13.6744ZM14.6522 15.6328L16.0089 15.6781V16.9224L14.6522 16.9007V15.6328ZM12.654 4.98982L14.084 5.23813V6.51595L12.654 6.2912V4.98982ZM12.6277 7.08326L14.0596 7.2926V8.57132L12.6277 8.38645V7.08326ZM14.084 9.40507V10.6829L12.654 10.5397V9.23741L14.084 9.40507ZM12.6277 11.3327L14.0596 11.4623V12.7401L12.6277 12.6368V11.3327ZM14.0713 13.5512V14.829L12.6395 14.7664V13.4633L14.0713 13.5512ZM12.6141 15.5612L14.0469 15.6093V16.888L12.6141 16.8653V15.5612ZM10.372 4.60195L11.8909 4.86657V6.18245L10.372 5.9441V4.60195ZM10.3584 14.6776V13.3355L11.8782 13.4288V14.7447L10.3584 14.6776ZM11.851 15.5195V16.8363L10.3303 16.8119V15.4688L11.851 15.5195ZM11.8646 10.4436L10.3448 10.2905V8.94832L11.8646 9.12685V10.4436ZM10.3177 6.72891L11.8383 6.95185V8.26863L10.3177 8.07198V6.72891ZM10.3177 11.1088L11.8383 11.2457V12.5624L10.3177 12.4519V11.1088ZM10.3294 17.7181L11.8501 17.7254V19.0412L10.3294 19.0612V17.7181ZM11.9208 21.1963L10.4037 21.2579V19.9167L11.9208 19.8813V21.1963ZM12.6141 17.7444L14.0469 17.7507V19.0276L12.6141 19.0467V17.7444ZM14.1003 21.1002L12.6694 21.1591V19.8569L14.0994 19.8215L14.1003 21.1002ZM14.6522 17.7562L16.0089 17.7616V19.0059L14.6522 19.0249V17.7562ZM16.0406 21.0368L14.6858 21.093V19.8269L16.0406 19.7943V21.0368ZM16.0443 10.8832L14.6903 10.7472V9.47938L16.0443 9.63888V10.8832ZM16.0443 6.8277L14.6903 6.61473V5.34779L16.0443 5.58432V6.8277ZM16.6179 17.7924L17.903 17.7969V19.0086L16.6179 19.0267V17.7924ZM17.9283 20.9851L16.6442 21.0395V19.807L17.9283 19.7753V20.9851ZM17.9374 11.0998L16.6542 10.9711V9.73766L17.9374 9.88901V11.0998ZM17.9374 7.15213L16.6542 6.95004V5.71754L17.9374 5.94138V7.15213ZM19.5913 8.03482L20.803 8.21335V11.4197L19.5913 11.2982V8.03482ZM19.6013 11.9344L20.8129 12.0432V15.2495L19.6013 15.1969V11.9344ZM19.6122 15.7878L20.8229 15.8286V19.0331L19.6122 19.0512V15.7878ZM20.8247 20.9126L19.6158 20.9643V19.7544L20.8247 19.7245V20.9126ZM26.5948 9.27638L27.5473 9.41323V10.4572L26.5948 10.3358V9.27638ZM26.5948 12.7337L27.5473 12.8171V13.8602L26.5948 13.794V12.7337ZM27.5536 14.5236V15.5676L26.6012 15.5277V14.4674L27.5536 14.5236ZM26.5848 16.1748L27.5382 16.2047V17.2469L26.5848 17.2342V16.1748ZM25.1475 9.04348L26.1453 9.18757V10.256L25.1475 10.1292V9.04348ZM25.1475 12.5833L26.1453 12.6703V13.7397L25.1475 13.669V12.5833ZM26.1517 14.4175V15.486L25.1548 15.4434V14.3586L26.1517 14.4175ZM25.1376 16.105L26.1353 16.1367V17.2061L25.1376 17.1907V16.105ZM23.6785 7.03885L24.7216 7.21829V8.31213L23.6785 8.14991V7.03885ZM23.6577 8.82598L24.7026 8.97732V10.0703L23.6577 9.93795V8.82598ZM24.7216 10.7817V11.8746L23.6785 11.7722V10.6611L24.7216 10.7817ZM23.6577 12.4501L24.7035 12.5416V13.6345L23.6595 13.5611V12.4501H23.6577ZM24.7134 14.3296V15.4226L23.6694 15.3782V14.2671L24.7134 14.3296ZM23.6495 16.056L24.6944 16.0896V17.1816L23.6495 17.1671V16.056ZM22.0264 6.76335L23.1257 6.95276V8.07379L22.0264 7.90341V6.76335ZM22.0164 15.3174V14.1774L23.1148 14.2417V15.3628L22.0164 15.3174ZM23.0949 16.0252V17.1463L21.9956 17.1299V15.989L23.0949 16.0252ZM23.1048 11.7024L22.0065 11.5937V10.4536L23.1048 10.5814V11.7024ZM21.9874 8.56951L23.0867 8.72901V9.85004L21.9874 9.71048V8.56951ZM21.9874 12.2888L23.0867 12.3857V13.5068L21.9874 13.4288V12.2888ZM21.9956 17.9003L23.0949 17.903V19.024L21.9956 19.0403V17.9003ZM23.1465 20.8592L22.0491 20.9072V19.7662L23.1465 19.739V20.8592ZM23.6495 17.9175L24.6944 17.9202V19.0131L23.6495 19.0294V17.9175ZM24.7334 20.7867L23.6903 20.832V19.7209L24.7334 19.6937V20.7867ZM25.1376 17.9247L26.1353 17.9265V18.9941L25.1376 19.0113V17.9247ZM26.1589 20.7386L25.162 20.7812V19.6964L26.1589 19.6711V20.7386ZM26.1616 12.0196L25.1657 11.9217V10.8369L26.1616 10.9529V12.0196ZM26.1616 8.53779L25.1666 8.38282V7.29804L26.1634 7.46932L26.1616 8.53779ZM26.5848 17.951L27.5382 17.9528V18.9968L26.5848 19.0122V17.951ZM27.5563 20.7006L26.6048 20.7423V19.6819L27.5563 19.6575V20.7006ZM27.5627 12.18L26.6102 12.0867V11.0264L27.5627 11.136V12.18ZM27.5627 8.77795L26.6102 8.63113V7.57082L27.5627 7.73485V8.77795Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="uk-margin-remove-bottom item-4px uk-text-uppercase fz-16">Công ty TNHH Đầu tư và phát triển công nghệ THT</h3>
+                        <address>
+                            <div class="uk-grid-small uk-grid" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div class="uk-cover-container">
+                                        <div class="uk-position-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5835 8.49284C2.5835 4.94534 5.45266 2.07617 9.00016 2.07617C12.5477 2.07617 15.4168 4.94534 15.4168 8.49284C15.4168 12.3153 11.3652 17.5862 9.706 19.5937C9.33933 20.0337 8.67016 20.0337 8.3035 19.5937C6.63516 17.5862 2.5835 12.3153 2.5835 8.49284ZM6.7085 8.49284C6.7085 9.75784 7.73516 10.7845 9.00016 10.7845C10.2652 10.7845 11.2918 9.75784 11.2918 8.49284C11.2918 7.22784 10.2652 6.20117 9.00016 6.20117C7.73516 6.20117 6.7085 7.22784 6.7085 8.49284Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <canvas width="20" height="20"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div>Tòa Elcom, ngõ 15 Duy Tân, phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội</div>
+                                </div>
+                            </div>
+                            <div class="uk-grid-small uk-grid" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div class="uk-cover-container">
+                                        <div class="uk-position-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9015 12.4818L16.0181 12.7235C16.8598 12.8235 17.4931 13.5318 17.4848 14.3735V15.8151C17.4848 16.7568 16.7015 17.5401 15.7598 17.4818C8.65147 17.0401 2.9598 11.3568 2.51814 4.24014C2.4598 3.29847 3.24314 2.51514 4.1848 2.51514H5.62647C6.47647 2.51514 7.1848 3.14847 7.2848 3.99014L7.52647 6.09014C7.5848 6.59847 7.4098 7.09847 7.05147 7.4568L5.5098 8.99847C6.7098 11.3651 8.64314 13.2901 11.0015 14.4901L12.5348 12.9568C12.8931 12.5985 13.3931 12.4235 13.9015 12.4818ZM10.7265 4.21514C13.3765 4.54847 15.4515 6.62347 15.7848 9.27347C15.8348 9.69847 16.1931 10.0068 16.6098 10.0068C16.6431 10.0068 16.6765 10.0068 16.7098 9.99847C17.1681 9.94014 17.4931 9.52347 17.4348 9.06514C17.0098 5.6568 14.3348 2.9818 10.9265 2.5568C10.4681 2.5068 10.0515 2.8318 10.0015 3.29014C9.94314 3.74847 10.2681 4.16514 10.7265 4.21514ZM11.0431 5.97347C10.6015 5.8568 10.1431 6.12347 10.0265 6.57347C9.9098 7.02347 10.1765 7.47347 10.6265 7.59014C11.5015 7.81514 12.1848 8.49847 12.4181 9.3818C12.5181 9.7568 12.8515 10.0068 13.2265 10.0068C13.2931 10.0068 13.3681 9.99847 13.4348 9.9818C13.8765 9.86514 14.1431 9.4068 14.0348 8.96514C13.6431 7.49014 12.5015 6.34847 11.0431 5.97347Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <canvas width="20" height="20"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div>(+84) 987 15 6688</div>
+                                </div>
+                            </div>
+                            <div class="uk-grid-small uk-grid" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div class="uk-cover-container">
+                                        <div class="uk-position-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.33317 3.33325H15.6665C16.5832 3.33325 17.3332 4.08325 17.3332 4.99992V14.9999C17.3332 15.9166 16.5832 16.6666 15.6665 16.6666H2.33317C1.4165 16.6666 0.666504 15.9166 0.666504 14.9999V4.99992C0.666504 4.08325 1.4165 3.33325 2.33317 3.33325ZM9.88317 10.2833L15.3332 6.87492C15.5415 6.74159 15.6665 6.51659 15.6665 6.27492C15.6665 5.71659 15.0582 5.38325 14.5832 5.67492L8.99984 9.16659L3.4165 5.67492C2.9415 5.38325 2.33317 5.71659 2.33317 6.27492C2.33317 6.51659 2.45817 6.74159 2.6665 6.87492L8.1165 10.2833C8.65817 10.6249 9.3415 10.6249 9.88317 10.2833Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <canvas width="20" height="20"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div>Anhtuan.cntht@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="uk-grid-small uk-grid" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div class="uk-cover-container">
+                                        <div class="uk-position-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 10.5C1.75 5.67 5.66125 1.75 10.4913 1.75C15.33 1.75 19.25 5.67 19.25 10.5C19.25 15.33 15.33 19.25 10.4913 19.25C5.66125 19.25 1.75 15.33 1.75 10.5ZM13.9738 7H16.555C15.715 5.55625 14.3763 4.43625 12.7663 3.885C13.2913 4.85625 13.6938 5.90625 13.9738 7ZM10.5 3.535C11.2262 4.585 11.795 5.74875 12.1713 7H8.82875C9.205 5.74875 9.77375 4.585 10.5 3.535ZM3.5 10.5C3.5 11.1038 3.5875 11.69 3.7275 12.25H6.685C6.615 11.6725 6.5625 11.095 6.5625 10.5C6.5625 9.905 6.615 9.3275 6.685 8.75H3.7275C3.5875 9.31 3.5 9.89625 3.5 10.5ZM4.445 14H7.02625C7.30625 15.0938 7.70875 16.1438 8.23375 17.115C6.62375 16.5638 5.285 15.4525 4.445 14ZM4.445 7H7.02625C7.30625 5.90625 7.70875 4.85625 8.23375 3.885C6.62375 4.43625 5.285 5.5475 4.445 7ZM10.5 17.465C9.77375 16.415 9.205 15.2513 8.82875 14H12.1713C11.795 15.2513 11.2262 16.415 10.5 17.465ZM8.3125 10.5C8.3125 11.095 8.37375 11.6725 8.4525 12.25H12.5475C12.6263 11.6725 12.6875 11.095 12.6875 10.5C12.6875 9.905 12.6263 9.31875 12.5475 8.75H8.4525C8.37375 9.31875 8.3125 9.905 8.3125 10.5ZM12.7663 17.115C13.2913 16.1438 13.6938 15.0938 13.9738 14H16.555C15.715 15.4438 14.3763 16.5638 12.7663 17.115ZM14.4375 10.5C14.4375 11.095 14.385 11.6725 14.315 12.25H17.2725C17.4125 11.69 17.5 11.1038 17.5 10.5C17.5 9.89625 17.4125 9.31 17.2725 8.75H14.315C14.385 9.3275 14.4375 9.905 14.4375 10.5Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <canvas width="20" height="20"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div>www.vr360tht.com.vn</div>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                    <div>
+                        <div class="my-class uk-flex uk-flex-middle">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1.20264C16.4494 1.20264 16.0039 1.64816 16.0039 2.19873V5.18701C16.0039 5.73759 16.4494 6.18311 17 6.18311C17.5506 6.18311 17.9961 5.73759 17.9961 5.18701V2.19873C17.9961 1.64816 17.5506 1.20264 17 1.20264Z" fill="white"/>
+                                <path d="M11.7277 7.471L9.73555 5.47882C9.34641 5.08974 8.71609 5.08974 8.32701 5.47882C7.93794 5.86789 7.93794 6.49829 8.32701 6.88736L10.3192 8.87954C10.7083 9.26862 11.3387 9.26862 11.7277 8.87954C12.1168 8.49047 12.1168 7.86008 11.7277 7.471Z" fill="white"/>
+                                <path d="M25.673 5.47882C25.284 5.08974 24.6536 5.08974 24.2645 5.47882L22.2723 7.471C21.8832 7.86008 21.8832 8.49047 22.2723 8.87954C22.6614 9.26862 23.2918 9.26862 23.6809 8.87954L25.673 6.88736C26.0621 6.49829 26.0621 5.86789 25.673 5.47882Z" fill="white"/>
+                                <path d="M33.0039 15.1479H29.9492V29.0933H33.0039C33.5545 29.0933 34 28.6477 34 28.0972V16.144C34 15.5935 33.5545 15.1479 33.0039 15.1479Z" fill="white"/>
+                                <path d="M0.996094 15.1479C0.44552 15.1479 0 15.5935 0 16.144V28.0972C0 28.6477 0.44552 29.0933 0.996094 29.0933H4.05078V15.1479H0.996094Z" fill="white"/>
+                                <path d="M16.2393 16.144C15.4796 16.144 14.7967 16.5662 14.4572 17.2452L11.4252 23.3112C11.9329 23.5339 12.4699 23.6468 13.0186 23.6468C14.5351 23.6468 15.8999 22.8015 16.5798 21.4397L17.2354 20.1284H19.1634C19.6877 20.1284 20.2013 20.3414 20.5719 20.7121L27.957 28.0972V16.144H16.2393Z" fill="white"/>
+                                <path d="M19.1634 22.1207H18.4669L18.4094 22.2358C17.4685 24.1175 15.6336 25.446 13.5366 25.6174C11.9938 25.7437 10.9246 25.2998 9.65673 24.7231C9.14115 24.4887 8.91683 23.8727 9.17011 23.3661L12.6747 16.3551C13.3496 15.0048 14.7298 14.1519 16.2393 14.1519H20.538C20.8139 13.5407 20.9844 12.8735 20.9844 12.1597C20.9844 11.6091 20.5389 11.1636 19.9883 11.1636H12.2549C11.1228 11.1636 10.0879 11.8031 9.58156 12.8158L8.69092 14.5971C8.52211 14.9347 8.1772 15.1479 7.79975 15.1479H6.04297V29.0933H10.611L13.4329 31.9152C14.2509 32.7332 15.4291 32.9914 16.4455 32.6516L24.9522 29.9775C25.4606 29.8344 25.8892 29.5547 26.2388 29.196L19.1634 22.1207Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="uk-margin-remove-bottom item-4px uk-text-uppercase fz-16">dịch vụ</h3>
+                        <nav class="uk-margin-small-top">
+                            <ul class="uk-nav uk-nav-default footer__nav">
+                                <li><a href="#">Chụp ảnh VR360</a></li>
+                                <li><a href="#">Video VR360</a></li>
+                                <li><a href="#">VR360 Virtual Tour</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <div class="my-class uk-flex uk-flex-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
+                                <g clip-path="url(#clip0_4886_287)">
+                                    <path d="M15.0071 8.12787H20.8661C21.2777 10.1797 23.1495 11.7341 25.3905 11.7341C27.9322 11.7341 30 9.73516 30 7.27826C30 4.82136 27.9322 2.8224 25.3905 2.8224C23.1495 2.8224 21.2777 4.37679 20.8661 6.4286H15.0069C14.5701 2.81425 11.3835 0 7.52924 0C3.37758 0 0 3.26499 0 7.27826C0 11.3041 3.36463 14.5565 7.52924 14.5565C9.2274 14.5565 10.8711 14.0064 12.1983 12.9932L16.5641 17.2135C15.7202 18.2445 15.1588 19.5007 14.9931 20.8722H9.13389C8.72232 18.8204 6.85055 17.266 4.60945 17.266C2.06783 17.2659 0 19.2648 0 21.7217C0 24.1786 2.06783 26.1775 4.60945 26.1775C6.85055 26.1775 8.72227 24.6232 9.13389 22.5713H14.9929C15.432 26.2191 18.624 29 22.4708 29C26.6355 29 30 25.7475 30 21.7217C30 17.7085 26.6224 14.4435 22.4708 14.4435C20.711 14.4435 19.0904 15.0303 17.807 16.0119L13.4408 11.7912C14.2884 10.7529 14.843 9.49133 15.0071 8.12787ZM25.3905 4.52162C26.963 4.52162 28.2422 5.75826 28.2422 7.27821C28.2422 8.79816 26.9629 10.0348 25.3905 10.0348C23.8182 10.0348 22.5389 8.79816 22.5389 7.27821C22.5389 5.75826 23.8181 4.52162 25.3905 4.52162ZM1.75781 7.27826C1.75781 4.20194 4.34684 1.69922 7.52924 1.69922C10.7116 1.69922 13.3007 4.20194 13.3007 7.27826C13.3007 8.65469 12.7826 9.93358 11.9056 10.9195C11.5947 9.80228 10.8376 8.86058 9.83074 8.28426C10.2163 7.8061 10.4469 7.20571 10.4469 6.55389C10.4469 4.9987 9.13805 3.73352 7.5293 3.73352C5.92055 3.73352 4.61168 4.99876 4.61168 6.55389C4.61168 7.20571 4.84225 7.8061 5.22785 8.28426C4.22104 8.86058 3.46389 9.80228 3.15299 10.9195C2.2759 9.93358 1.75781 8.65469 1.75781 7.27826ZM6.36938 6.55383C6.36938 5.9356 6.88969 5.43269 7.52918 5.43269C8.16867 5.43269 8.68898 5.93565 8.68898 6.55383C8.68898 7.17201 8.16867 7.67497 7.52918 7.67497C6.88969 7.67497 6.36938 7.17206 6.36938 6.55383ZM4.755 12.1742C4.755 10.454 6.08807 9.37425 7.52918 9.37425C8.95664 9.37425 10.3034 10.4389 10.3034 12.1742C8.54525 13.1028 6.44508 13.0668 4.755 12.1742ZM4.60945 24.4784C3.03709 24.4784 1.75781 23.2417 1.75781 21.7217C1.75781 20.2017 3.03709 18.9652 4.60945 18.9652C6.18182 18.9652 7.46109 20.2018 7.46109 21.7217C7.46109 23.2417 6.18187 24.4784 4.60945 24.4784ZM19.6966 26.6177C19.6966 24.8979 21.0294 23.8181 22.4702 23.8178H22.4708C22.4708 23.8178 22.4712 23.8178 22.4714 23.8178C23.8981 23.8181 25.2451 24.8821 25.2451 26.6176C23.5318 27.5226 21.4318 27.5342 19.6966 26.6177ZM21.311 20.9974C21.311 20.3791 21.8313 19.8762 22.4708 19.8762C23.1103 19.8762 23.6306 20.3792 23.6306 20.9974C23.6306 21.6155 23.1104 22.1183 22.4711 22.1186C22.471 22.1186 22.4709 22.1186 22.4708 22.1186C22.4706 22.1186 22.4705 22.1186 22.4704 22.1186C21.8311 22.1183 21.311 21.6155 21.311 20.9974ZM28.2422 21.7217C28.2422 23.0982 27.7241 24.377 26.8471 25.363C26.5362 24.2458 25.7791 23.304 24.7723 22.7277C25.1579 22.2496 25.3885 21.6492 25.3885 20.9974C25.3885 19.4422 24.0796 18.177 22.4709 18.177C20.8621 18.177 19.5533 19.4422 19.5533 20.9974C19.5533 21.6492 19.7838 22.2496 20.1694 22.7277C19.1627 23.304 18.4055 24.2458 18.0946 25.363C17.2177 24.377 16.6996 23.0982 16.6996 21.7217C16.6996 18.6454 19.2886 16.1427 22.471 16.1427C25.6534 16.1427 28.2422 18.6455 28.2422 21.7217Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4886_287">
+                                        <rect width="30" height="29" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="uk-margin-remove-bottom item-4px uk-text-uppercase fz-16">liên kết</h3>
+                        <div class="uk-margin-small-top uk-grid uk-grid-small" uk-grid>
+                            <div>
+                                <div class="uk-cover-container uk-border-circle bg-005DCB">
+                                    <div class="uk-position-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17" fill="none">
+                                            <path d="M8.00003 0V2.9834C8.00003 2.9834 6.633 2.9834 6.11038 2.9834C5.42725 2.98345 5.30671 3.25864 5.30667 3.92578V5.5752H8.00003L7.75882 8.44141H5.30667V17H1.80862V8.44141H3.05176e-05V5.53613H1.80862C1.80862 5.53613 1.80862 5.14321 1.80862 3.25879C1.80862 1.13871 2.97489 1.4223e-05 5.58792 0H8.00003Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <canvas width="39" height="39"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-cover-container uk-border-circle bg-CC202D">
+                                    <div class="uk-position-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <g clip-path="url(#clip0_4886_303)">
+                                                <path d="M19.5 39.0001C30.2696 39.0001 39.0001 30.2696 39.0001 19.5C39.0001 8.73047 30.2696 0 19.5 0C8.73047 0 0 8.73047 0 19.5C0 30.2696 8.73047 39.0001 19.5 39.0001Z" fill="#D42428"/>
+                                                <path d="M33.288 5.70923C40.9032 13.3251 40.9039 25.6723 33.288 33.2882C25.6727 40.9035 13.3249 40.9038 5.70898 33.2882L33.288 5.70923Z" fill="#CC202D"/>
+                                                <path d="M38.7029 22.8739L25.5794 9.75044L24.5208 10.809L23.4622 9.75044L22.302 10.9107L23.0813 11.6899L22.827 11.9443L20.8062 9.9235L20.7199 10.0103L17.9968 7.28716L16.8365 8.44737L17.154 8.76485L16.6878 9.23102L14.7249 7.26807L13.9111 8.08184L15.8248 12.6903L14.963 16.2286L17.3191 18.5853L11.3598 19.0022L11.2696 29.3434L20.8595 38.9449C29.8449 38.3067 37.1818 31.5859 38.7029 22.8739Z" fill="#BA202E"/>
+                                                <path d="M26.4748 24.0215H25.2166L25.2228 23.2911C25.2228 22.9662 25.4892 22.7012 25.8152 22.7012H25.8959C26.222 22.7012 26.4895 22.9663 26.4895 23.2911L26.4748 24.0215ZM21.7579 22.4563C21.4398 22.4563 21.1787 22.6709 21.1787 22.9332V26.485C21.1787 26.7473 21.4398 26.9607 21.7579 26.9607C22.0784 26.9607 22.3395 26.7473 22.3395 26.485V22.9329C22.3395 22.6709 22.0784 22.4563 21.7579 22.4563ZM29.4166 20.47V27.2262C29.4166 28.847 28.0113 30.1729 26.2928 30.1729H13.4499C11.7311 30.1729 10.3261 28.8467 10.3261 27.2262V20.47C10.3261 18.8491 11.7311 17.5226 13.4499 17.5226H26.2932C28.0112 17.5226 29.4166 18.8494 29.4166 20.47ZM14.3062 27.96L14.3056 20.8429L15.8975 20.8435V19.7886L11.6535 19.7821V20.8185L12.9785 20.8226V27.9596H14.3062V27.96ZM19.0788 21.9033H17.7513V25.7036C17.7513 26.2535 17.7843 26.5284 17.7495 26.6251C17.6412 26.9198 17.1559 27.2327 16.9671 26.6571C16.9351 26.5562 16.9634 26.2519 16.9628 25.7294L16.9567 21.903H15.6366L15.6416 25.669C15.6422 26.2463 15.6283 26.6768 15.6459 26.8727C15.6782 27.2181 15.6662 27.6212 15.9874 27.8506C16.5841 28.2814 17.7289 27.7866 18.0152 27.1716L18.0128 27.9562L19.0784 27.9577V21.9033H19.0788ZM23.3252 26.255L23.3227 23.0918C23.3215 21.886 22.4199 21.164 21.195 22.1395L21.2005 19.7876L19.8744 19.7897L19.8679 27.9066L20.9582 27.8906L21.0574 27.3847C22.4513 28.6644 23.3276 27.7881 23.3252 26.255ZM27.4801 25.836L26.4843 25.8412C26.4843 25.881 26.4825 25.9262 26.4819 25.9761V26.5316C26.4819 26.8287 26.2365 27.0707 25.9381 27.0707H25.7431C25.4442 27.0707 25.1988 26.8287 25.1988 26.5316V26.47V25.8585V25.0702H27.478V24.2124C27.478 23.5858 27.4617 22.9592 27.4099 22.6008C27.2471 21.4667 25.6557 21.2869 24.8515 21.8673C24.5991 22.0487 24.4066 22.2913 24.2939 22.6177C24.1809 22.9439 24.1249 23.3887 24.1249 23.9547V25.8406C24.1257 28.9757 27.9336 28.5326 27.4801 25.836ZM22.3743 15.5961C22.4424 15.7629 22.5486 15.8975 22.6936 15.9997C22.8356 16.0994 23.0185 16.1503 23.2367 16.1503C23.428 16.1503 23.5976 16.0985 23.7448 15.9917C23.8923 15.8855 24.0167 15.7272 24.1177 15.5154L24.0924 16.0364H25.5719V9.74389H24.4071V14.6412C24.4071 14.9061 24.1882 15.1231 23.9211 15.1231C23.656 15.1231 23.4365 14.9061 23.4365 14.6412V9.74389H22.2211V13.9879C22.2211 14.5286 22.2307 14.8891 22.247 15.072C22.2644 15.2537 22.306 15.4276 22.3743 15.5961ZM17.8906 12.0422C17.8906 11.4381 17.9411 10.9666 18.0408 10.6267C18.1412 10.2877 18.3228 10.0152 18.5846 9.81014C18.8463 9.60351 19.1814 9.5004 19.5878 9.5004C19.9299 9.5004 20.2233 9.56779 20.4687 9.69929C20.7141 9.8317 20.9047 10.0032 21.0359 10.2153C21.1708 10.4281 21.2613 10.647 21.3102 10.8709C21.3601 11.0975 21.3841 11.4402 21.3841 11.9011V13.4927C21.3841 14.0765 21.3608 14.5057 21.3155 14.7786C21.2708 15.052 21.1742 15.3054 21.0245 15.5428C20.8767 15.7781 20.6858 15.9539 20.4543 16.0659C20.2209 16.1796 19.9539 16.235 19.6515 16.235C19.3147 16.235 19.0301 16.1885 18.7964 16.0909C18.5618 15.9942 18.3801 15.8482 18.2511 15.6546C18.1199 15.4606 18.0285 15.2244 17.9734 14.9492C17.9173 14.6736 17.8908 14.2601 17.8908 13.7083V12.0422H17.8906ZM19.0489 14.5421C19.0489 14.898 19.3146 15.189 19.6376 15.189C19.9606 15.189 20.2245 14.8983 20.2245 14.5421V11.192C20.2245 10.8361 19.9606 10.5452 19.6376 10.5452C19.3146 10.5452 19.0489 10.8358 19.0489 11.192V14.5421ZM14.954 16.2334H16.3503L16.3516 11.4072L18.0011 7.27287H16.4742L15.5972 10.3443L14.7077 7.26489H13.1971L14.9518 11.41L14.954 16.2334Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4886_303">
+                                                    <rect width="39" height="39" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <canvas width="39" height="39"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-cover-container uk-border-circle bg-2F4858">
+                                    <div class="uk-position-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                            <path d="M8.18025 11.9222C6.35642 11.9222 4.88299 13.3957 4.90994 15.2015C4.92791 16.3605 5.5658 17.3668 6.50467 17.9283C6.18572 17.4386 5.99705 16.8591 5.98807 16.2347C5.96111 14.4289 7.43455 12.9554 9.25838 12.9554C9.61775 12.9554 9.96365 13.0138 10.2871 13.1171V9.50093C9.95017 9.45151 9.60428 9.42456 9.25838 9.42456C9.24041 9.42456 9.22693 9.42456 9.20896 9.42456V12.0839C8.88553 11.9806 8.53963 11.9222 8.18025 11.9222Z" fill="#F00044"/>
+                                            <path d="M16.064 1.07812H16.0371H15.1027C15.3722 2.43027 16.1314 3.60723 17.1916 4.40684C16.4953 3.48594 16.073 2.33594 16.064 1.07812Z" fill="#F00044"/>
+                                            <path d="M21.5625 6.58101C21.2076 6.58101 20.8662 6.54507 20.5293 6.48218L15.0039 7.19194L9.20897 21.841C8.87205 21.8904 8.52615 21.9173 8.18026 21.9173C6.64393 21.9173 5.17947 21.4187 3.98904 20.4978C4.12381 20.6595 4.26756 20.8168 4.42479 20.9695C5.71854 22.2453 7.43455 22.9505 9.26287 22.9505C9.60877 22.9505 9.95467 22.9236 10.2916 22.8742C11.7291 22.663 13.0543 22.0027 14.101 20.9695C15.3857 19.6982 16.0955 18.0136 16.1045 16.2168L16.0371 8.22515C16.648 8.69683 17.3174 9.09214 18.0406 9.39312C19.1592 9.8648 20.3451 10.1074 21.5625 10.1074" fill="#F00044"/>
+                                            <path d="M4.4113 11.4146C5.69157 10.1433 7.39411 9.43804 9.20896 9.42456V8.46772C8.87204 8.41831 8.52614 8.39136 8.18025 8.39136C6.34743 8.39136 4.62693 9.09663 3.33318 10.3814C2.06189 11.6437 1.33415 13.3687 1.33864 15.1611C1.33864 16.9669 2.0529 18.6605 3.34216 19.9408C3.5488 20.1429 3.75993 20.3316 3.98454 20.5023C2.96931 19.2939 2.41677 17.7845 2.41228 16.1943C2.41677 14.4019 3.14001 12.6769 4.4113 11.4146Z" fill="#08FFF9"/>
+                                            <path d="M20.5293 6.48213V5.5208H20.5203C19.2715 5.5208 18.1215 5.10752 17.1961 4.40674C18.0002 5.46689 19.1771 6.22158 20.5293 6.48213Z" fill="#08FFF9"/>
+                                            <path d="M9.0742 19.4152C9.50096 19.4377 9.90974 19.3793 10.2871 19.258C11.5898 18.8312 12.5287 17.6184 12.5287 16.1898L12.5332 10.8441V1.07812H15.1027C15.0353 0.741211 14.9994 0.399805 14.9949 0.0449219H11.4551V9.80644L11.4506 15.1521C11.4506 16.5807 10.5117 17.7936 9.20896 18.2203C8.83162 18.3461 8.42283 18.4045 7.99607 18.3775C7.45252 18.3461 6.9449 18.1844 6.50467 17.9238C7.05721 18.7773 8.00057 19.3568 9.0742 19.4152Z" fill="#08FFF9"/>
+                                            <path d="M9.20896 21.841C10.6465 21.6299 11.9717 20.9695 13.0183 19.9363C14.3031 18.665 15.0129 16.9805 15.0218 15.1836L15.0039 7.19199C15.6148 7.66367 16.2842 8.05898 17.0074 8.35996C18.126 8.83164 19.3119 9.07422 20.5293 9.07422V6.48223C19.1771 6.22168 18.0002 5.46699 17.1961 4.40684C16.1359 3.60723 15.3722 2.43027 15.1072 1.07812H12.5332V10.8396L12.5287 16.1853C12.5287 17.6139 11.5898 18.8268 10.2871 19.2535C9.90974 19.3793 9.50095 19.4377 9.07419 19.4107C7.99607 19.3523 7.0572 18.7729 6.50466 17.9238C5.56579 17.3668 4.9279 16.3561 4.90993 15.1971C4.88298 13.3912 6.35642 11.9178 8.18025 11.9178C8.53962 11.9178 8.88552 11.9762 9.20896 12.0795V9.42012C7.39411 9.43359 5.69157 10.1389 4.4113 11.4102C3.14001 12.6725 2.41228 14.3975 2.41677 16.1853C2.41677 17.7756 2.96931 19.285 3.98903 20.4934C5.18396 21.4143 6.64392 21.9129 8.18025 21.9129C8.52614 21.9174 8.87204 21.8904 9.20896 21.841Z" fill="black"/>
+                                        </svg>
+                                    </div>
+                                    <canvas width="39" height="39"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section-xsmall uk-text-center footer__bottom">
+            <div class="uk-container">
+                <div class="fz-14 lh-142">© 2025 VR360THT. All Right Reserved</div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--/app-->
+</body>
+</html>
