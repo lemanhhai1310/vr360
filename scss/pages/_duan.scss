@@ -1,0 +1,11 @@
+.duan {
+  &__box{
+    background: rgba(#333459,.76);
+    margin-top: -45px;
+    border-bottom: 6px solid rgba(#F69C1F,1);
+    width: 85%;
+    @include media-breakpoint-up('l'){
+      width: 75%;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 $sizes:(
         '545': 545px,
+        '909': 909px,
 );
 @each $name,$value in $sizes {
   .w-#{$name}{
