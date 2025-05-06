@@ -72,10 +72,11 @@
                         <div class="uk-card-media-top uk-cover-container uk-border-rounded">
                             <img src="https://picsum.photos/400/235?random=<?= $index ?>" alt="" uk-cover="">
                             <canvas width="400" height="235"></canvas>
+                            <a href="tintuc-detail.php" class="uk-position-cover"></a>
                         </div>
                         <div class="uk-card-body uk-padding-small">
                             <div class="fz-14 text-3161C2"><?= $item['date'] ?></div>
-                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href=""
+                            <h4 class="my-class-title text-0B0B0B fz-18 barlow-semibold uk-margin-remove-bottom item-12px"><a href="tintuc-detail.php"
                                                                                                                class="uk-link-toggle"><?= $item['title'] ?></a>
                             </h4>
                             <p class="line-clamp-3"><?= $item['description'] ?></p>

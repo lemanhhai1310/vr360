@@ -1,0 +1,26 @@
+.tintuc{
+  &__box{
+    padding: 15px 0;
+    border-top: 1px solid #ECEDEF;
+    border-bottom: 1px solid #ECEDEF;
+  }
+  &__listNews{
+    border-top: 1px solid #979797;
+    &__item{
+      $x:15px;
+      //border-bottom: 1px solid #ECEDEF;
+      padding-bottom: #{$x};
+      padding-top: #{$x};
+      &:nth-child(n+2){
+        border-top: 1px solid #ECEDEF;
+        padding-top: #{$x};
+      }
+      &:last-child{
+        border-bottom: 1px solid #ECEDEF;
+      }
+      &:first-child{
+
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 $sizes:(
         '142': 1.42857,
+        '144': 1.44444,
 );
 @each $name,$value in $sizes {
   .lh-#{$name}{
