@@ -1,0 +1,29 @@
+$x:#333;
+.uk-breadcrumb{
+  >*{
+    >*{
+      @extend .fz-16;
+      &:not(:hover){
+        color: #{$x};
+      }
+    }
+    &:nth-child(n+2){
+      &:not(.uk-first-column){
+        &:before{
+          margin: 0 10px;
+          color: #{$x};
+        }
+      }
+    }
+    &:last-child{
+      >a{
+        &:not([href]){
+          @extend .barlow-bold;
+        }
+      }
+      >span{
+        @extend .barlow-bold;
+      }
+    }
+  }
+}

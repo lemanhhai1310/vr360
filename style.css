@@ -35,7 +35,7 @@
   font-style: normal;
 }
 
-.barlow-bold {
+.barlow-bold, .uk-breadcrumb > *:last-child > span, .uk-breadcrumb > *:last-child > a:not([href]) {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -147,6 +147,10 @@
 
 .bgc-070A71, .home__duan__section:before {
   background-color: #070A71;
+}
+
+.bgc-c3f5ff {
+  background-color: #c3f5ff;
 }
 
 @media (min-width: 1600px) {
@@ -675,7 +679,7 @@
   font-size: 0.875rem;
 }
 
-.fz-16, .home__tintuc__nav > li > a, .footer__nav > li > a {
+.fz-16, .home__tintuc__nav > li > a, .footer__nav > li > a, .uk-breadcrumb > * > * {
   font-size: 1rem;
 }
 
@@ -831,6 +835,13 @@
   }
 }
 
+.uk-breadcrumb > * > *:not(:hover) {
+  color: #333;
+}
+.uk-breadcrumb > *:nth-child(n+2):not(.uk-first-column):before {
+  margin: 0 10px;
+  color: #333;
+}
 .line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -890,6 +901,10 @@
   color: #0b0b0b;
 }
 
+.text-484554 {
+  color: #484554;
+}
+
 .ls--016 {
   letter-spacing: -0.16px;
 }
@@ -902,12 +917,20 @@
   margin-top: 0.25rem;
 }
 
+.item-6px:nth-child(n+2) {
+  margin-top: 0.375rem;
+}
+
 .item-9px:nth-child(n+2) {
   margin-top: 0.5625rem;
 }
 
 .item-10px:nth-child(n+2) {
   margin-top: 0.625rem;
+}
+
+.item-14px:nth-child(n+2) {
+  margin-top: 0.875rem;
 }
 
 .item-17px:nth-child(n+2) {
@@ -924,6 +947,15 @@
 @media (min-width: 1200px) {
   .item-37px:nth-child(n+2) {
     margin-top: 2.3125rem;
+  }
+}
+
+.item-38px:nth-child(n+2) {
+  margin-top: calc(1.3625rem + 1.35vw);
+}
+@media (min-width: 1200px) {
+  .item-38px:nth-child(n+2) {
+    margin-top: 2.375rem;
   }
 }
 
@@ -2187,7 +2219,7 @@
   border-radius: 23px;
 }
 
-.header {
+.header:is(.uk-position-top) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.69);
 }
 .header__navContainer.uk-sticky-below {
@@ -2218,7 +2250,7 @@
   background-color: currentColor;
 }
 .header__offcanvas__bar {
-  background-color: rgba(49, 97, 194, 0.8);
+  background-color: rgba(49, 97, 194, 0.9);
   width: 100%;
   left: -100%;
 }
@@ -2281,6 +2313,11 @@
 }
 .footer__bottom {
   border-top: 1px solid #3161C2;
+}
+
+.entryHeader__bg {
+  background: var(--path-to-image) lightgray -28px -194.32px/103.88% 451.389% no-repeat;
+  mix-blend-mode: screen;
 }
 
 /* --- CSS cho hiệu ứng Load Time --- */
@@ -2458,6 +2495,17 @@
 }
 .home__doitac__overlay {
   background: var(--path-to-image) no-repeat center/cover, #D9D9D9;
+}
+
+.contact__card {
+  background: var(--Neutral-6, #FFF);
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+@media (min-width: 1200px) {
+  .contact__card {
+    padding: 40px 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

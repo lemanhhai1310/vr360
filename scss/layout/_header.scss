@@ -1,5 +1,7 @@
 .header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.69);
+  &:is(.uk-position-top){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.69);
+  }
   &__navContainer{
     &.uk-sticky-below{
       box-shadow: 1px 1px 10px rgba(0, 0, 0, .15);
@@ -72,7 +74,7 @@
   }
   &__offcanvas{
     &__bar{
-      background-color: rgba(#3161C2, .8);
+      background-color: rgba(#3161C2, .9);
       width: 100%;
       left: -100%;
       .uk-offcanvas-flip &{
